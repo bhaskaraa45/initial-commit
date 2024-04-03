@@ -1,23 +1,33 @@
 {
-    "name": "Initial Commit",
-    "version": "1.0.1",
     "manifest_version": 3,
-    "description": "Finds the intial commit of a public github repository",
+    "name": "Initial Commit",
+    "version": "1.0",
+    "description": "Finds and navigates to the initial commit of a GitHub repository.",
     "permissions": [
-      "contextMenus",
-      "activeTab",
-      "scripting"
+      "tabs",
+      "scripting",
+      "<all_urls>",
+      "contextMenus"
     ],
-    "icons": {
-      "16": "/assets/icon.png",
-      "48": "/assets/icon.png",
-      "128": "/assets/icon.png"
+    "background": {
+      "scripts": ["index.js"]
     },
     "action": {
-      "default_title": "Git First",
-      "default_icon": "/assets/icon.png"
+      "default_icon": {
+        "16": "images/icon-16.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+      }
     },
-    "background": {
-      "service_worker": "index.js"
-    }
-}
+    "icons": {
+      "48": "images/icon-48.png",
+      "96": "images/icon-96.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://github.com/*/*"],
+        "js": ["index.js"]
+      }
+    ]
+  }
+  

@@ -1,7 +1,7 @@
 {
   "name": "initial-commit",
   "version": "1.0.0",
-  "description": "a project to find inital commit of a github repo",
+  "description": "a chrome extension to find inital commit of a public github repo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

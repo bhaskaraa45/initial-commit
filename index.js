@@ -83,13 +83,25 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
     }
 });
 
+// function showError(tab) {
+//     chrome.scripting.executeScript({
+//         target: { tabId: tab.id },
+//         function: alertUser,
+//     });
+// }
+
+// function alertUser() {
+//     alert("Failed to fetch data, may be a private repo or some unknown reason");
+// }
+
 function showError(tab) {
     chrome.scripting.executeScript({
         target: { tabId: tab.id },
-        function: alertUser,
+        func: alertUser,
+        args: ["Failed to fetch data, may be a private repo or some unknown reason"]
     });
 }
 
-function alertUser() {
-    alert("Failed to fetch data, may be a private repo or some unknown reason");
+function alertUser(errorMessage) {
+    alert(errorMessage);
 }
