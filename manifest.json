@@ -9,13 +9,13 @@
       "scripting"
     ],
     "icons": {
-      "16": "/assets/plus1.png",
-      "48": "/assets/plus1.png",
-      "128": "/assets/plus1.png"
+      "16": "/assets/icon.png",
+      "48": "/assets/icon.png",
+      "128": "/assets/icon.png"
     },
     "action": {
       "default_title": "Git First",
-      "default_icon": "/assets/plus1.png"
+      "default_icon": "/assets/icon.png"
     },
     "background": {
       "service_worker": "index.js"
