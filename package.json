@@ -1,0 +1,24 @@
+{
+  "name": "initial-commit",
+  "version": "1.0.0",
+  "description": "a project to find inital commit of a github repo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bhaskaraa45/initial-commit"
+  },
+  "author": "bhaskar <bhaskaraa45@duck.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bhaskaraa45/initial-commit/issues"
+  },
+  "homepage": "https://github.com/bhaskaraa45/initial-commit#readme",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "parse-link-header": "^2.0.0",
+    "webpack": "^5.91.0"
+  }
+}
